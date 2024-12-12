@@ -1,0 +1,44 @@
+
+<div class="container text-center mt-5">
+    <h1 class="text-center ">Calculadora Básica</h1>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+            <label for="n1" class="form-label">Primer Número</label>
+            <input type="number" [(ngModel)]="n1" class="form-control text-center" id="exampleFormControlInput1" placeholder="Primer Número">
+          </div>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+            <label for="n2" class="form-label">Segundo Número</label>
+            <input type="number" [(ngModel)]="n2" class="form-control text-center" id="exampleFormControlInput1" placeholder="Segundo Número">
+          </div>
+      </div>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <button type="button" (click)="suma()" class="btn btn-success">Sumar</button>
+          </div>
+          <div class="col">
+            <button type="button"  (click)="resta()" class="btn btn-danger">Restar</button>
+          </div>
+          <div class="col">
+            <button type="button"  (click)="multiplicacion()" class="btn btn-primary">Multiplicar</button>
+          </div>
+          <div class="col">
+            <button type="button"  (click)="division()" class="btn btn-warning">Dividir</button>
+          </div>
+          <div class="col">
+            <button type="button"  (click)="borrar()" class="btn btn-secundary">Limpiar</button>
+          </div>
+        </div>
+      </div>
+      <div class="row" >
+        <div class="col">
+            <h1>Resultado: {{res}}</h1>
+      </div>
+      
+  </div>
+
+</div>
